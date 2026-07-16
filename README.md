@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0039-combination-sum) |
 | [0078-subsets](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0622-design-circular-queue](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0622-design-circular-queue) |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -39,4 +40,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0622-design-circular-queue](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0622-design-circular-queue) |
+## Math
+|  |
+| ------- |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+## Two Pointers
+|  |
+| ------- |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+## Sorting
+|  |
+| ------- |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+## Simulation
+|  |
+| ------- |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
+## Number Theory
+|  |
+| ------- |
+| [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 <!---LeetCode Topics End-->
