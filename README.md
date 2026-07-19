@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0039-combination-sum) |
 | [0078-subsets](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0622-design-circular-queue](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0622-design-circular-queue) |
+| [1004-max-consecutive-ones-iii](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Bit Manipulation
 |  |
@@ -87,4 +88,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0100-same-tree](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/0101-symmetric-tree) |
+## Binary Search
+|  |
+| ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
+## Sliding Window
+|  |
+| ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/taniagar878-oss/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 <!---LeetCode Topics End-->
