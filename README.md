@@ -1,7 +1,23 @@
 # LeetCode-Solutions
 A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
 
-<!---LeetCode Topics Start-->
+This repository contains my C++ solutions to LeetCode problems. Every solution represents another step in improving my problem-solving skills and preparing for coding interviews.
+
+## 🚀 Tech Stack
+- C++
+- STL
+
+## 🎯 Current Focus
+- Consistent DSA practice
+- Interview preparation
+- Writing clean and optimized code
+
+## 📈 Progress
+Total problems solved - 130
+- 🟢 Easy- 57
+- 🟡 Medium- 65
+- 🔴 Hard- 6
+
 # LeetCode Topics
 ## String
 |  |
