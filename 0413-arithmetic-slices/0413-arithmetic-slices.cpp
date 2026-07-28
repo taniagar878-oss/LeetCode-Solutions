@@ -12,8 +12,7 @@ public:
         int dif=0;
         while(start<n-2 && end<n)
         {
-            dif=nums[start]-nums[end];
-            while(end<n-1 && nums[end-1]-nums[end]==dif && nums[end]-nums[end+1]==dif)
+            while(end<n-1 && nums[end-1]-nums[end]==nums[end]-nums[end+1])
             {
                 end++;
             }
