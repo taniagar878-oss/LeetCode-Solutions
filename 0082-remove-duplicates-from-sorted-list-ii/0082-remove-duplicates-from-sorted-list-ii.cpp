@@ -10,41 +10,30 @@
  */
 class Solution {
 public:
-    ListNode* deleteDuplicates(ListNode* head) 
+    ListNode* deleteDuplicates(ListNode* head)
     {
-        if(head==NULL) return head;
-        if(head->next==NULL) return head;
-        
-        unordered_map<int,int>freq;
-        ListNode* temp=head;
-        while(temp!=NULL)
+        ListNode* dummy=new ListNode(0);
+        dummy->next=head;
+        ListNode* prev=dummy;
+        ListNode* curr=head;
+
+        while(curr!=NULL)
         {
-            freq[temp->val]++;
-            temp=temp->next;
-        }
-        
-        temp=head;
-        while(temp!=NULL && freq[temp->val]>1)
-        {
-            temp=temp->next;
-        }
-        if(temp==NULL) return NULL;
-        head=temp;
-        ListNode* cur=head->next;
-        while(temp->next!=NULL)
-        {
-            while(cur!=NULL && freq[cur->val]>1)
+            if(curr->next!=NULL && curr->val==curr->next->val)
             {
-                cur=cur->next;
+                int x=curr->val;
+                while(curr!=NULL && curr->val==x)
+                {
+                    curr=curr->next;
+                }
+                prev->next=curr;
             }
-            if(cur==NULL) temp->next=NULL;
-            else 
+            else
             {
-                temp->next=cur;
-                temp=temp->next;
-                cur=cur->next;
+                prev=curr;
+                curr=curr->next;
             }
         }
-        return head;
+        return dummy->next;
     }
 };
