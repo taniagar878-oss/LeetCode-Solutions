@@ -1,25 +1,31 @@
 class Solution {
 public:
-void solve(string cur,int open,int close,int n,vector<string>&ans)
-{
-    if(cur.size()==2*n) 
+    void ValidParenthesis(int n,int open,int close,string &part,vector<string>&ans)
     {
-        ans.push_back(cur);
-        return;
+        if(part.size()==2*n)
+        {
+            ans.push_back(part);
+            return;
+        }
+        if(open<n)
+        {
+            part+='(';
+            ValidParenthesis(n,open+1,close,part,ans);
+            part.pop_back();
+        }
+        if(close<open)
+        {
+            part+=')';
+            ValidParenthesis(n,open,close+1,part,ans);
+            part.pop_back();
+        }
     }
-    if(open<n)
+    vector<string> generateParenthesis(int n) 
     {
-        solve(cur+"(",open+1,close,n,ans);
-    }
-    if(close<open)
-    {
-        solve(cur+")",open,close+1,n,ans);
-    }
-}
-vector<string> generateParenthesis(int n) 
-    {
-       vector<string>ans;
-       solve("",0,0,n,ans);
-       return ans; 
+        vector<string>ans;
+        string part="";
+        int open=0,close=0;
+        ValidParenthesis(n,open,close,part,ans);
+        return ans;
     }
 };
