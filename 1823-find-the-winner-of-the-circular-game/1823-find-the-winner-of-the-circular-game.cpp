@@ -1,49 +1,25 @@
 class Solution {
 public:
-    struct ListNode
-    {
-        int data;
-        ListNode* next;
-    };
-    ListNode* getNode(int x)
-    {
-        ListNode* temp=new ListNode;
-        temp->data=x;
-        temp->next=NULL;
-        return temp;
-    };
-    ListNode* Build(int n)
-    {
-        ListNode* head=getNode(1);
-        int val=2; 
-        ListNode* temp=head;
-        while(val<=n)
-        {
-            temp->next=getNode(val++);
-            temp=temp->next;
-        }
-        temp->next=head;
-        return head;
-    };
+/*Josephus (1823)
+
+Base Case:
+winner(1) = 0
+
+Recurrence:
+winner(i) = (winner(i-1) + k) % i
+
+Intuition:
+• After one elimination, the remaining people form the SAME problem with i-1 people.
+• Renumber the remaining people starting from the next person.
+• The recurrence converts the winner from the renumbered circle back to the original numbering by undoing the shift.
+• % wraps the index because the people stand in a circle.*/
     int findTheWinner(int n, int k) 
     {
-        ListNode* head=Build(n);
-        ListNode* ptr=head;
-        ListNode* temp=head;
-        while(temp->next!=head) temp=temp->next;
-        int count=1;
-        while(ptr->next!=ptr)
+        int winner=0;
+        for(int i=2;i<=n;i++)
         {
-            while(count<k)
-            {
-                temp=ptr;
-                ptr=ptr->next;
-                count++;
-            }
-            temp->next=ptr->next;
-            ptr=temp->next;
-            count=1;
+            winner=(winner+k)%i;
         }
-        return ptr->data;
+        return winner+1;
     }
 };
