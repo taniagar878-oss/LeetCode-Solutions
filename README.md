@@ -13,10 +13,7 @@ This repository contains my C++ solutions to LeetCode problems. Every solution r
 - Writing clean and optimized code
 
 ## 📈 Progress
-Total problems solved - 130
-- 🟢 Easy- 57
-- 🟡 Medium- 65
-- 🔴 Hard- 6
+Total problems solved - 200
 
 # LeetCode Topics
 ## String
