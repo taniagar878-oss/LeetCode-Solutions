@@ -24,23 +24,7 @@ public:
         sort(ans.begin(),ans.end());
         for(auto vec : ans)
         {
-            if(sol.size()==0) sol.push_back(vec);
-            else
-            {
-                int n=sol.size();
-                int m=sol[n-1].size();
-                int i=vec.size();
-                if(m!=i) sol.push_back(vec);
-                else 
-                {
-                    int val=0;
-                    for(int j=0; j<i; j++)
-                    {
-                        if(vec[j]==sol[n-1][j]) val++;
-                    }
-                    if(val!=i) sol.push_back(vec);
-                }
-            }
+            if(sol.empty() || sol.back() != vec) sol.push_back(vec);
         }
         return sol;
     }
