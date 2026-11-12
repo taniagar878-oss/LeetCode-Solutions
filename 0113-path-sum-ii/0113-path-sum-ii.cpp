@@ -19,13 +19,9 @@ public:
             ans.push_back(path);
             return;
         }
-        else 
-        {
-            path.push_back(root->val);
-            if(root->left) pathsum(ans,path,root->left,targetSum,sum+root->val);
-            if(root->right) pathsum(ans,path,root->right,targetSum,sum+root->val);
-        }
-        return;
+        path.push_back(root->val);
+        if(root->left) pathsum(ans,path,root->left,targetSum,sum+root->val);
+        if(root->right) pathsum(ans,path,root->right,targetSum,sum+root->val);
     }
     vector<vector<int>> pathSum(TreeNode* root, int targetSum) 
     {
