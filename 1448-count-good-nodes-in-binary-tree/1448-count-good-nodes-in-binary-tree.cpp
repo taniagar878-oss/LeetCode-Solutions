@@ -23,6 +23,7 @@ public:
     }
     int goodNodes(TreeNode* root) 
     {
+        if(root==NULL) return 0;
         int good=0;
         int mymax=INT_MIN;
         numofgood(root,good,mymax);
