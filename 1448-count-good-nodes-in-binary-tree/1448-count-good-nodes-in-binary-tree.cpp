@@ -11,25 +11,21 @@
  */
 class Solution {
 public:
-    void numofgood(TreeNode* root,stack<int>&s,int &good)
+    void numofgood(TreeNode* root,int &good,int mymax)
     {
-        bool pushed=false;
-        if(s.size()!=0 && root->val>=s.top())
+        if(root->val>=mymax)
         {
             good++;
-            s.push(root->val);
-            pushed=true;
+            mymax=root->val;
         }
-        if(root->left) numofgood(root->left,s,good);
-        if(root->right) numofgood(root->right,s,good);
-        if(pushed==true) s.pop();
+        if(root->left) numofgood(root->left,good,mymax);
+        if(root->right) numofgood(root->right,good,mymax);
     }
     int goodNodes(TreeNode* root) 
     {
         int good=0;
-        stack<int>s;
-        s.push(root->val);
-        numofgood(root,s,good);
+        int mymax=INT_MIN;
+        numofgood(root,good,mymax);
         return good;
     }
 };
